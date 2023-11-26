@@ -1,6 +1,5 @@
 # Cloud-File-Manager-
 
-
 # File Upload and Database Interaction Application
 
 This application utilizes Express.js and AWS SDK to handle user registration, login, file upload to an AWS S3 bucket, and folder creation in a PostgreSQL database. The code provides an API for these functionalities.
@@ -45,4 +44,30 @@ Request:
     "password": "password123"
 }
 ```
+
 # cloud-file-manager
+
+
+# File Upload using `/uploadfile` Endpoint
+
+This document describes the process of uploading a file to the server using the `/uploadfile` endpoint.
+
+## Uploading a File
+
+To upload a file, make a POST request to `http://localhost:3000/uploadfile` with the following payload:
+
+```json
+{
+    "name": "shubham",
+    "layer": -1,
+    "parent": "null",
+    "owner": "shubham21155102",
+    "content": "/Users/shubham/Documents/1.uber.pdf"
+}
+```
+
+```
+File uploaded successfully. https://propacityy.s3.ap-south-1.amazonaws.com/42f74c9f-289c-4bb5-946f-45f51130ece8
+42f74c9f-289c-4bb5-946f-45f51130ece8 shubham 0 null shubham21155102 https://propacityy.s3.ap-south-1.amazonaws.com/42f74c9f-289c-4bb5-946f-45f51130ece8
+
+```
